@@ -1,1 +1,349 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
 /* Add CSS styling here */
+* {
+    box-sizing: border-box;
+}
+html{
+    color: #4A4847;
+    font-size: 62.5%;
+    width: 100%;
+}
+body {
+    width: 100%;
+    max-width: 100%;
+    background-color: rgb(218, 196, 196);
+}
+
+h1 {
+    padding: 2%; 
+    background-color: linen;
+    font-family: "Satisfy", cursive;
+    font-size: 10rem;
+    text-align: center;
+    width: 100%;
+}
+
+h2 {
+    padding: 2%;
+    border-bottom: 4px solid #1e3354;
+    /* margin: 30px; */
+    font-family: "Satisfy", cursive;
+    text-align: center;
+    font-size: 6rem;
+}
+/* div {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
+
+p {
+    font-size: 2rem;
+    width: 60%;
+    font-family: "Merriweather", serif;
+    /* display: block; */
+    margin: 1% auto;
+    padding: 1%;
+    border: 0;
+}
+
+nav {
+    background: #4c525c;
+    height: 4rem;
+    width: 100%;
+    /* margin: 2rem auto; */
+    padding: 2%;
+    /* background: rgb(55, 123, 128); */
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav button {
+    margin: 1rem;
+}
+
+footer nav {
+    margin: 0 auto;
+    padding: 2%;
+    /* position: fixed; */
+    left: 0rem;
+    bottom: 0rem;
+    height: 4rem;
+    width: 100%;
+    background: #4c525c;
+    height: 6rem;
+}
+
+footer button {
+    margin: 0 1rem;
+}
+
+a {
+    font-size: 1.6rem;
+    color: antiquewhite;
+}
+
+button {
+    width: 10rem;
+    color: gray;
+    background-color: #1e3354;
+    padding: .3rem;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+}
+
+button:hover {
+    background-color: #4682B4;
+}
+
+img {
+    /* padding: 10px; */
+    overflow: hidden;
+}
+
+
+img:hover {
+
+    transition: transform .5s ease;
+    transform: scale(1.10, 1.10);
+
+}
+
+address {
+    font-size: large;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+a:link {
+    text-decoration: none;
+  }
+
+
+.upper {
+        padding: 3%;
+    }
+
+.latest {
+    padding: 0;
+    overflow: hidden;
+    /* height: 60rem; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 75%;
+}
+
+.latest img {
+    width: 100%;
+}
+.projects {
+    margin: 4rem;
+    overflow: hidden;
+    /* height: 40rem; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.projects img{
+    margin: 0 1%;
+    width: 20%;
+}
+
+.projects p {
+    width: 20%;
+}
+
+.about {
+    font-size: 2.0rem;
+}
+
+#footer {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   height: 2.5rem;            /* Footer height */
+ }
+
+.intro {
+    font-size: 2rem;
+    background-color: #AFA49E;
+    width: 75%;
+    margin: 0 auto;
+
+}
+
+address {
+    font-size: 2rem;
+    /* margin-top: 30%; */
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+
+}
+@media(max-width: 800px){
+  .projects{
+      flex-direction: column;
+      justify-content: space-around;
+  }
+  .projects img {
+      width: 50%;
+      padding: 2%;
+  }
+  .projects p {
+      width: 50%
+  }
+  }
+  
+  @media(max-width: 500px){
+    .projects {
+        flex-direction: column;
+        justify-content: space-around; 
+    }
+    .projects img {
+        width: 50%;
+        padding: 2%;
+}
+.projects p {
+    width: 50%
+}
+  }
